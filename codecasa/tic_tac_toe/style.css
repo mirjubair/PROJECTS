@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(8, 8, 48);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .tic-tac-toe {
+    text-align: center;
+    background-color: #288086;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  .message {
+    margin: 10px 0;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    border: 1px solid #ccc;
+  }
+  
+  .cell[data-cell]:hover {
+    background-color: rgb(65, 117, 113);
+  }
+  
